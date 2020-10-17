@@ -1,0 +1,9 @@
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\bin\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.deps.json
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\bin\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.dll
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\bin\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.pdb
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.AssemblyInfoInputs.cache
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.AssemblyInfo.cs
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.csproj.CoreCompileInputs.cache
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.dll
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.pdb
+C:\Users\oddos\source\repos\n0tFlix\Subtitles\n0tFlix.Subtitles.NapiSub\obj\Debug\netstandard2.1\n0tFlix.Subtitles.NapiSub.csprojAssemblyReference.cache
