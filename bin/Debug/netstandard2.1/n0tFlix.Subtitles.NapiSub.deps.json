@@ -7,13 +7,13 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "n0tFlix.Subtitles.NapiSub/1.0.0": {
+      "n0tFlix.Subtitles.Napisub/1.0.0": {
         "dependencies": {
           "Jellyfin.Common": "10.6.0",
           "Jellyfin.Controller": "10.6.0"
         },
         "runtime": {
-          "n0tFlix.Subtitles.NapiSub.dll": {}
+          "n0tFlix.Subtitles.Napisub.dll": {}
         }
       },
       "Jellyfin.Common/10.6.0": {
@@ -496,7 +496,7 @@
     }
   },
   "libraries": {
-    "n0tFlix.Subtitles.NapiSub/1.0.0": {
+    "n0tFlix.Subtitles.Napisub/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

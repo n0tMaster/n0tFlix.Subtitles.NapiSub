@@ -1,23 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <RootNamespace>Jellyfin.Plugin.Subscene</RootNamespace>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
-    <FileVersion>9.0.0.0</FileVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RootNamespace>Jellyfin.Plugin.Subscene</RootNamespace>
+		<AssemblyVersion>9.0.0.0</AssemblyVersion>
+		<FileVersion>9.0.0.0</FileVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Configuration\configPage.html" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="Configuration\configPage.html" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Jellyfin.Common" Version="10.6.0" />
-    <PackageReference Include="Jellyfin.Controller" Version="10.6.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Jellyfin.Common" Version="10.6.0" />
+		<PackageReference Include="Jellyfin.Controller" Version="10.6.0" />
+	</ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;C:\ProgramData\Jellyfin\Server\plugins\&quot; /y" />
-  </Target>
-
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="Compress-Archive -LiteralPath $(TargetPath)  -DestinationPath &quot;$(TargetDir)$(ProjectName).zip&quot;&#xD;&#xA;#md5 the zip file for use with the manifest&#xD;&#xA;$md5 =Get-FileHash  -Algorithm MD5 &quot;$(TargetDir)$(ProjectName).zip&quot; | Select-Object Hash&#xD;&#xA;$md5 = $md5 -replace &quot;Hash&quot;,&quot;&quot; -replace &quot;@{=&quot;,&quot;&quot; -replace &quot;}&quot;,&quot;&quot;&#xD;&#xA;echo $md5&#xD;&#xA;&#xD;&#xA;echo &quot;We got the md5 &quot;&#xD;&#xA;" />
+	</Target>
 </Project>
